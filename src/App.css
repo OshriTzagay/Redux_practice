@@ -1,7 +1,46 @@
 .App {
   text-align: center;
 }
+.app-router {
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd"
+    "sb main main main"
+    "sb main main main"
+    "ft ft ft ft";
+  min-height: 100vh;
+  max-width: 100vw;
+  text-align: center;
+}
+.the-footer {
+  grid-area: ft;
+  border: gray solid 1px;
+ 
+}
+.the-header {
+  grid-area: hd;
+  border: rgba(255, 217, 0, 0.541) solid 1px;
 
+}
+.side-bar {
+  grid-area: sb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: burlywood solid 1px;
+
+}
+.the-main {
+  grid-area: main;
+  border: #61dafb solid 1px;
+
+}
+
+.the-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .App-logo {
   height: 8vmin;
   pointer-events: none;
